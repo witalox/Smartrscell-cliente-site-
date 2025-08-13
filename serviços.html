@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartrscell - Assistência Técnica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/robo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/robo1.jpg" alt="Mascote RS">
+            <h1>Smartrscell</h1>
+        </div>
+        <div class="endereco">
+            <a href="#" id="btn-whatsapp-header" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Solicitar orçamento
+            </a>
+        </div>
+    </header>
+
+    <nav class="categorias">
+    <a href="#" class="ativo" data-category="todos">Todos</a>
+    <a href="#" data-category="Troca de Tela">Troca de Tela</a>
+    <a href="#" data-category="Bateria">Bateria</a>
+    <a href="#" data-category="Software">Software</a>
+    <a href="#" data-category="Limpeza">Limpeza</a>
+    <a href="#" data-category="Acessórios">Acessórios</a>
+    <a href="#" data-category="Serviços">Serviços</a>
+    <a href="#" data-category="Venda">Venda</a>
+</nav>
+
+    <div class="busca">
+        <input type="text" id="busca" placeholder="Buscar serviço ou acessório">
+    </div>
+
+    <main id="lista-servicos">
+        <h2>Serviços em Destaque</h2>
+
+        <div class="servico" data-categoria="Troca de Tela">
+            <img src="imagens/trocadetela.jpg" alt="Troca de tela">
+            <div class="info">
+                <h3>Troca de Tela</h3>
+                <p>Tela original e instalação com garantia.</p>
+                <p class="preco">Valor: a consultar</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Bateria">
+            <img src="imagens/trocadebateria.webp" alt="Troca de bateria">
+            <div class="info">
+                <h3>Troca de Bateria</h3>
+                <p>Baterias novas, instalação rápida.</p>
+                <p>Valor: a consultar</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Limpeza">
+            <img src="imagens/limpezadecelular.webp" alt="Limpeza interna">
+            <div class="info">
+                <h3>Limpeza Completa</h3>
+                <p>Remoção de sujeira interna e oxidação.</p>
+                <p class="preco">A partir de R$ 80,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Software">
+            <img src="imagens/formatarcelular.webp" alt="Software">
+            <div class="info">
+                <h3>Formatação e Atualização</h3>
+                <p>Instalação de sistema e remoção de vírus.</p>
+                <p class="preco">A partir de R$ 80,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/capadecelular.png" alt="Capas Protetoras">
+            <div class="info">
+                <h3>Capas Protetoras</h3>
+                <p>Capas de silicone flexível, anti-impacto, personalizadas e com suporte.</p>
+                <p>Android: R$14,99<br> iPhone: R$35</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/pelicula-celular-3d-700x394.webp" alt="Películas 3D">
+            <div class="info">
+                <h3>Películas de Vidro 3D</h3>
+                <p>Android: padrão R$15, fosca R$25, privacidade R$25 <br> iPhone: padrão R$25, fosca R$50, privacidade R$50</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/cabodecarregador.webp" alt="Cabos de Carregamento">
+            <div class="info">
+                <h3>Cabos de Carregamento</h3>
+                <p>Android (USB-C / micro USB) e iPhone (Lightning) originais e compatíveis.</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/fontedecabo.webp" alt="Fontes de Carregador">
+            <div class="info">
+                <h3>Fontes de Carregador</h3>
+                <p>Fontes turbo 20W e fontes comuns 5W a 10W.</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/fonedeouvido.jpg" alt="Fones de Ouvido">
+            <div class="info">
+                <h3>Fones de Ouvido & Headsets</h3>
+                <p>Com fio (a partir de R$25,00) e sem fio (a partir de R$65,00). <br> Fone PENG: R$97,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="imagens/tecladoemousegamer.webp" alt="Periféricos">
+            <div class="info">
+                <h3>Periféricos</h3>
+                <p>Teclados com e sem fio, mini teclados (a partir de R$40,00) e mouses gamer.</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Serviços">
+            <img src="imagens/reparostecnicos.webp" alt="Reparo Técnico Geral">
+            <div class="info">
+                <h3>Reparo Técnico Geral</h3>
+                <p>Troca de conectores, botões, microfones e ajustes gerais.</p>
+                <p class="preco">Valor: a consultar</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Venda">
+            <img src="https://imgs.search.brave.com/dG7_M7mXuvibY_9SWIN1M2cjqXeMwDiuwSnUHBDmaGI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/b2x4LmNvbS5ici9p/bWFnZXMvNDIvNDI4/NDAyNzIwMDYwNzc1/LndlYnA" alt="Venda de Celulares Redmi Note 8">
+            <div class="info">
+                <h3>Venda de Celulares</h3>
+                <p>Redmi Note 8</p>
+                <p class="preco">R$ 599,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Venda">
+            <img src="https://imgs.search.brave.com/tPWbFLvADnMqrDTO833dKWPi6QsLu3Hd3sitTX3JkhA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/b2x4LmNvbS5ici9p/bWFnZXMvNjUvNjUy/NTc1NzkzNjIwNjEz/LndlYnA" alt="Venda de Celulares iPhone 7">
+            <div class="info">
+                <h3>Venda de Celulares</h3>
+                <p>Iphone 7 (normal)</p>
+                <p class="preco">R$ 649,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://www.moinhoatacadista.com.br/image/cache/data/Produtos/CA/Cabo-usb-para-celular-tipo-C-3-1A-01-metro-Inova-COR-NAO-DEFINIDA-44FEAC9D-1-700x700.jpg.webp" alt="Cabo Tipo-C Inova">
+            <div class="info">
+                <h3>Cabo Tipo-C Inova</h3>
+                <p>Marca: Inova</p>
+                <p class="preco">R$ 19,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/yWrtsH7oKxHHS9QnMMVayS8ulsBVd8rYe3KqWJN778k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YXdzbGkuY29tLmJy/LzMwMHgzMDAvMjUy/Ny8yNTI3NDg4L3By/b2R1dG8vMjk5NDE4/ODc3LzE2MTEzZmU1/MTUzMDk5M2FjYTEz/ZjhhMzBhOWVkN2Vj/LTV0c3RqbHJ3aGcu/anBn" alt="Cabo V8 Inova">
+            <div class="info">
+                <h3>Cabo V8 Inova</h3>
+                <p>Marca: Inova</p>
+                <p class="preco">R$ 14,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/cbXACwBI9gKQloO3lUUOxpeDwDp-SSyP8Sb6BjcXv_Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWlyYW8uY29tLmJy/L21lZGlhL2NhdGFs/b2cvcHJvZHVjdC9j/YWNoZS8zZTJjMmNi/Yjg5YWMyYWQ3Zjhi/N2YzN2U3NzA1NGJj/Ni9jL2EvY2FyLTAw/OTQtdHouanBn" alt="Cabo Lightning iPhone Inova">
+            <div class="info">
+                <h3>Cabo Lightning (iPhone) Inova</h3>
+                <p>Marca: Inova</p>
+                <p class="preco">R$ 29,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/1RZ1bUH5nqdx1L5uSHXOS6b1ritmMCYrj5QKm_gbZX0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YXdzbGkuY29tLmJy/LzMwMHgzMDAvMzUv/MzU1NDEvcHJvZHV0/by8yNzIzNTg0MjYv/MTcxNzc2OTgzNGp0/a3Fwby04aGZrcXVo/NXgzLmpwZw" alt="Cabo Tipo-C Turbo Gshield">
+            <div class="info">
+                <h3>Cabo Tipo-C Turbo Gshield</h3>
+                <p>Marca: Gorila Shield</p>
+                <p class="preco">R$ 29,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="data:image/jpeg;base64,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" alt="Cabo V8 Turbo Kaidi">
+            <div class="info">
+                <h3>Cabo V8 Turbo Kaidi</h3>
+                <p>Marca: Kaidi</p>
+                <p class="preco">R$ 24,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/5RH_ajStFii1dsg0-fFsMYJyZvaTTAo3WyXUiJsLn6Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YXdzbGkuY29tLmJy/LzQwMHg0MDAvMjM5/MC8yMzkwNzE3L3By/b2R1dG8vMjIxNTcy/MjM1L2RfbnFfbnBf/NzUyNDEwLW0ta2pn/MWFpaHV3NS5qcGc" alt="Carregador Turbo V8 Kaidi">
+            <div class="info">
+                <h3>Carregador Turbo V8 Kaidi</h3>
+                <p>Marca: Kaidi</p>
+                <p class="preco">R$ 29,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/8rK-cY1MCBf5DOZCqM9ALinwiB6e8PQneX1-1-GLckk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF84/NTYzODUtTUxCNTIx/OTg5MDI0NTNfMTAy/MDIyLU8ud2VicA" alt="Carregador Turbo Tipo-C Kaidi">
+            <div class="info">
+                <h3>Carregador Turbo Tipo-C Kaidi</h3>
+                <p>Marca: Kaidi</p>
+                <p class="preco">R$ 29,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://dcdn-us.mitiendanube.com/stores/004/993/974/products/d_nq_np_2x_652130-mlu77128512686_062024-f-bcb939db7e8088bf9d17238944068437-1024-1024.webp" alt="Fone Inova FON-205">
+            <div class="info">
+                <h3>Fone Inova FON-205</h3>
+                <p>Marca: Inova (Verde)</p>
+                <p class="preco">R$ 24,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/DHIH_GNJBKL52NqzBx1BpVxymy79B6M1f0KDdL2UZ9o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9raXZl/c2hvcC5jb20uYnIv/aW1hZ2UvY2FjaGUv/Y2F0YWxvZy9wcm9k/dWN0cy9mb24tNjcy/MS1mb25lLWRlLW91/dmlkby1zZW0tZmls/by1tYXJjYS1pbm92/YTEtNTUweDU1MC5w/bmc" alt="Fone TWS Inova">
+            <div class="info">
+                <h3>Fone TWS Inova (Bluetooth)</h3>
+                <p>Marca: Inova</p>
+                <p class="preco">R$ 49,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://imgs.search.brave.com/6uJFK2hJx0SyDb7ssifaaujsf3H4bX3h_JqAzWKTWXU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzUxZ3gxQUYxQU5M/LmpwZw" alt="Fone TWS Kaidi">
+            <div class="info">
+                <h3>Fone TWS Kaidi (Bluetooth)</h3>
+                <p>Marca: Kaidi</p>
+                <p class="preco">R$ 59,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://m.media-amazon.com/images/I/41jdFu15ndL.jpg" alt="Caixa de Som Mini ELG">
+            <div class="info">
+                <h3>Caixa de Som Mini ELG</h3>
+                <p>Marca: ELG</p>
+                <p class="preco">R$ 79,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://m.media-amazon.com/images/I/81q-IdkC%2BsL._UF894%2C1000_QL80_.jpg" alt="Caixa de Som Unleash Sound">
+            <div class="info">
+                <h3>Caixa de Som Unleash Sound</h3>
+                <p>Marca: Unleash (ELG ou similar)</p>
+                <p class="preco">R$ 119,99</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_775419-MLA80337110028_112024-O-cabo-celular-usb-turbo-hrebos-swift-pro-cb-215v-micro-usb-v8.webp" alt="Cabo USB V8 CB-215V HREBOS">
+            <div class="info">
+                <h3>Cabo USB V8 CB-215V</h3>
+                <p>Marca: HREBOS</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://tecstoreacessorios.com/cdn/shop/files/17cm---2024-12-14T103803.999_2_400x.png?v=1746039240" alt="Cabo Tipo C CB117-3 GOLD">
+            <div class="info">
+                <h3>Cabo Tipo C CB117-3</h3>
+                <p>Marca: GOLD</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+
+        <div class="servico" data-categoria="Acessórios">
+            <img src="https://cdn.awsli.com.br/800x800/2239/2239055/produto/224510068ccd449dc98.jpg" alt="Cabo Tipo C CB10-3 GOLD">
+            <div class="info">
+                <h3>Cabo Tipo C CB10-3</h3>
+                <p>Marca: GOLD</p>
+                <p class="preco">R$ 15,00</p>
+            </div>
+        </div>
+    </main>
+
+    <p>(imagens são ilustrativas)</p>
+
+    <footer>
+        <a href="index.html" class="ativo"><i class="fa fa-wrench"></i><span>Serviços</span></a>
+        <a href="#" id="btn-orcamentos-footer"><i class="fa fa-list"></i><span>Orçamentos</span></a>
+        <a href="#" id="btn-whatsapp-footer" class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+    </footer>
+
+    <button id="backToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="modal-imagem" class="modal">
+        <div class="modal-content-wrapper">
+            <span class="fechar">&times;</span>
+            <img class="modal-conteudo" id="imagem-ampliada">
+            <div id="caption" class="caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

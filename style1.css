@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 50px 8%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    background: #1f3c88;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-img img {
+    width: 380px;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    /* Remover transições de transform e box-shadow daqui, se a animação de revelação for a principal */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px #ccc;
+}
+
+.card p {
+    font-weight: bold;
+    color: #333;
+}
+
+.card span {
+    display: block;
+    margin-top: 5px;
+    color: #1f3c88;
+    font-weight: bold;
+}
+
+.descricao {
+    margin-top: 15px;
+    color: #555;
+    text-align: center;
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 10px;
+}
+
+.sobre-texto .subtitulo {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.sobre-img {
+    flex: 1;
+    text-align: center;
+}
+
+.sobre-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ESTILOS DA SEGUNDA PARTE DO SITE */
+.service-section,
+.products-section,
+.guarantee-section,
+.tech-section {
+    margin: 40px auto;
+    padding: 40px 8%;
+    max-width: 1000px;
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.service-list {
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 0 10px #eee;
+}
+
+.service-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.icon-box {
+    width: 28px;
+    height: 28px;
+    border: 1.7px solid #222;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.icon-screen::before {
+    content: "📱";
+    font-size: 20px;
+}
+.icon-battery::before {
+    content: "🔋";
+    font-size: 20px;
+}
+.icon-connector::before {
+    content: "🔌";
+    font-size: 20px;
+}
+.icon-update::before {
+    content: "🔄";
+    font-size: 20px;
+}
+.icon-diagnosis::before {
+    content: "📟";
+    font-size: 20px;
+}
+
+.service-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 18px #ddd;
+}
+
+.products-section h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    /* Remover transições de transform e box-shadow daqui, se a animação de revelação for a principal */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    cursor: pointer;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px #ccc;
+}
+
+.product-item strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.product-item span {
+    color: #0056b3;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.guarantee-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+}
+
+.guarantee-list {
+    flex: 1;
+}
+
+.guarantee-list h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.guarantee-list ul {
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.guarantee-list ul li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.guarantee-list ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2a9d8f;
+    font-weight: 700;
+}
+
+.guarantee-image {
+    flex: 1;
+}
+
+.guarantee-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.tech-section {
+    max-width: 900px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.tech-text {
+    flex: 1;
+}
+
+.tech-text h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tech-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    font-style: normal;
+    max-width: 460px;
+}
+
+.tech-map {
+    flex: 1;
+    text-align: center;
+}
+
+.tech-map img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #ccc;
+}
+
+/* Container para centralizar o botão/link */
+.container-centralizador {
+    text-align: center; /* Centraliza o link (que é inline-block por padrão) */
+    padding: 20px 0; /* Espaçamento para visualização */
+}
+
+.botao-link {
+    background: #1f3c88;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao-link:hover {
+    background: #2a52b8; /* Escurece um pouco ao passar o mouse */
+    transition: background 0.5s ease;
+}
+
+/* Estilos Específicos do Modal */
+.modal-trigger-img {
+    cursor: zoom-in; /* Altera o cursor para indicar que a imagem é clicável */
+}
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica por cima de tudo */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite scroll se a imagem for muito grande */
+    background-color: rgba(0,0,0,0.9); /* Fundo preto semi-transparente */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    flex-direction: column; /* Organiza conteúdo em coluna */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px; /* Borda arredondada para a imagem no modal */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para a imagem */
+}
+
+#caption {
+    margin-top: 20px;
+    color: #f1f1f1;
+    font-size: 17px;
+    padding: 10px 0;
+    text-align: center;
+    max-width: 80%;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animação para o modal (opcional, mas legal!) */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* Aumenta o z-index do modal para garantir que ele esteja sempre visível sobre tudo */
+.modal {
+    z-index: 9999;
+}
+
+/* --- ESTILOS PARA ANIMAÇÃO DE REVELAÇÃO AO ROLAR GERAL --- */
+
+/* Estilo base para todos os itens que serão revelados */
+.reveal-item,
+.card,
+.product-item {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(30px); /* Começa um pouco abaixo da posição final */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transição suave e um pouco mais lenta */
+}
+
+/* Quando a classe 'revealed' é adicionada, o item aparece */
+.reveal-item.revealed,
+.card.revealed,
+.product-item.revealed {
+    opacity: 1; /* Torna-se visível */
+    transform: translateY(0); /* Volta para a posição original */
+}
+
+/* Opcional: Adicionar um pequeno delay para cada item dentro de um grupo */
+/* Isso fará com que os cards e product-items apareçam em sequência dentro de suas seções */
+.cards .card:nth-child(1),
+.product-list .product-item:nth-child(1) { transition-delay: 0.1s; }
+.cards .card:nth-child(2),
+.product-list .product-item:nth-child(2) { transition-delay: 0.2s; }
+.cards .card:nth-child(3),
+.product-list .product-item:nth-child(3) { transition-delay: 0.3s; }
+.cards .card:nth-child(4),
+.product-list .product-item:nth-child(4) { transition-delay: 0.4s; }
+/* Continue adicionando se tiver mais de 4 cards/items em um grupo */
+
+/* Opcional: Delay para as seções (reveal-item) */
+/* Isso fará com que as seções como "Sobre nós", "Garantia" etc. apareçam em sequência */
+.hero + .reveal-item { transition-delay: 0.2s; } /* Primeiro item após o hero */
+.hero + .reveal-item + .reveal-item { transition-delay: 0.4s; }
+.hero + .reveal-item + .reveal-item + .reveal-item { transition-delay: 0.6s; }
+/* Adapte e adicione mais conforme a ordem e quantidade das suas seções */
+
+/* Responsividade (Mantido) */
+@media (max-width: 768px) {
+
+    .btn{
+        margin: 10px;
+    }
+
+    .hero,
+    .sobre,
+    .service-section,
+    .guarantee-section,
+    .tech-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .sobre-texto,
+    .tech-text {
+        max-width: 100%;
+    }
+
+    .hero-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cards,
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+    .card,
+    .product-item {
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+
+    .tech-map img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
